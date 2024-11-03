@@ -11,7 +11,7 @@ const Header = () => {
     </>
     return (
         <div className='bg-primary text-white'>
-            <div className="navbar">
+            <div className="navbar px-24">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,6 +46,11 @@ const Header = () => {
                     <a className="btn rounded-full"><FaRegHeart /></a>
                 </div>
             </div>
+                <div className='text-center w-11/12 mx-auto space-y-4 pb-72 mt-12'>
+                    <h1 className='font-bold text-[56px]'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
+                    <p className=''>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</p>
+                    <button className='btn rounded-3xl py-4 px-7'>Shop Now</button>
+                </div>
         </div>
     );
 };
