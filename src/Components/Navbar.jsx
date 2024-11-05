@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from 'react-icons/fa';
 
@@ -9,8 +9,10 @@ const Navbar = () => {
         <li><Link>Statistics</Link></li>
         <li><Link>Dashboard</Link></li>
     </>
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
     return (
-        <div className='text-black'>
+        <div className= {`${ isHomePage? 'bg-primary text-white w-11/12 mx-auto' : 'bg-white text-black'}`}>
             <div className="navbar px-24">
                 <div className="navbar-start">
                     <div className="dropdown">
