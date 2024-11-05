@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from 'react-icons/fa';
 
 const Navbar = () => {
-    const links = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link>Statistics</Link></li>
-        <li><Link>Dashboard</Link></li>
-    </>
     const location = useLocation();
     const isHomePage = location.pathname === '/';
+    const links = <>
+        <li><Link className={`${isHomePage? 'underline' : ''}`} to='/'>Home</Link></li>
+        <li><NavLink to='/details'>Statistics</NavLink></li>
+        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+    </>
     return (
-        <div className= {`${ isHomePage? 'bg-primary text-white w-11/12 mx-auto' : 'bg-white text-black'}`}>
+        <div className= {`${ isHomePage? 'bg-primary text-white mt-6 w-11/12 mx-auto rounded-t-3xl' : 'bg-white text-black'}`}>
             <div className="navbar px-24">
                 <div className="navbar-start">
                     <div className="dropdown">
