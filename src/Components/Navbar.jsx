@@ -5,7 +5,7 @@ import { FaRegHeart } from 'react-icons/fa';
 
 const Navbar = () => {
     const location = useLocation();
-    const isHomePage = location.pathname === '/';
+    const isHomePage = location.pathname === '/' || location.pathname.startsWith('/category');
     const isStats = location.pathname === '/details';
     const isDashboard = location.pathname === '/dashboard'
     const links = <>

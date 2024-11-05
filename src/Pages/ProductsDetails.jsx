@@ -1,10 +1,10 @@
 import React from 'react';
-import Banner from '../Components/BannerHome';
+// import Banner from '../Components/Banner';
 
 const ProductsDetails = () => {
     return (
         <div>
-            <Banner></Banner>
+            {/* <Banner></Banner> */}
         </div>
     );
 };
