@@ -6,10 +6,12 @@ import { FaRegHeart } from 'react-icons/fa';
 const Navbar = () => {
     const location = useLocation();
     const isHomePage = location.pathname === '/';
+    const isStats = location.pathname === '/details';
+    const isDashboard = location.pathname === '/dashboard'
     const links = <>
         <li><Link className={`${isHomePage? 'underline' : ''}`} to='/'>Home</Link></li>
-        <li><NavLink to='/details'>Statistics</NavLink></li>
-        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+        <li><Link className={`${isStats? 'text-primary' : ''}`} to='/details'>Statistics</Link></li>
+        <li><Link className={`${isDashboard ? 'text-primary' : ''}`} to='/dashboard'>Dashboard</Link></li>
     </>
     return (
         <div className= {`${ isHomePage? 'bg-primary text-white mt-6 w-11/12 mx-auto rounded-t-3xl' : 'bg-white text-black'}`}>

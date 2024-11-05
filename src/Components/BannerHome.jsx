@@ -7,7 +7,7 @@ const BannerHome = () => {
                 <div className='relative space-y-4'>
                     <h1 className='font-bold text-[56px]'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <p className=''>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</p>
-                    <button className='btn rounded-3xl py-4 px-7'>Shop Now</button>
+                    <button className='btn rounded-3xl py-4 px-7 text-primary'>Shop Now</button>
                 </div>
                 <div className=' absolute'>
                     <img src="/banner.jpg" alt="" className='w-3/4 rounded-3xl h-full mx-auto border p-5 backdrop-blur-xl' />
