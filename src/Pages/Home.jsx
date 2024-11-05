@@ -13,6 +13,7 @@ const Home = () => {
                 <Categories categories={categories}></Categories>
                 <Outlet></Outlet>
             </div>
+            {/* <button>View All</button> */}
         </div>
     );
 };

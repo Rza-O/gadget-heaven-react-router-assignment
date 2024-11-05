@@ -1,8 +1,5 @@
 [
-  { "id": 1, 
-  "category": "All Products", 
-  "slug": "all" 
-  },
+  
   {
     "id": 2,
     "category": "Smartphones",

@@ -1,20 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Categories = ({categories}) => {
     return (
         <div>
             <ul className="menu bg-base-200 rounded-box w-56">
+                <li>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) => isActive ? "bg-primary text-white" : ""}>
+                        All Products
+                    </NavLink>
+                </li>
                 {
                     categories.map(category => 
                         <li>
-                            <Link key={category.slug} 
-                            to={`/category/${category.category}`}>
+                            <NavLink key={category.slug} 
+                            to={`/category/${category.category}`} 
+                            className={({isActive})=> `${isActive ? 'bg-primary text-white' : ''}`}>
                                 {category.category}
-                            </Link>
+                            </NavLink>
                         </li>
                     )
                 }
+                
             </ul>
         </div>
     );
