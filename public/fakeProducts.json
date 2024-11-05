@@ -2,7 +2,7 @@
   {
     "product_id": "SP001",
     "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://example.com/images/galaxy_s23_ultra.jpg",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-S23-Ultra-Green-3380.jpg",
     "category": "Smartphones",
     "price": 999.99,
     "description": "High-performance smartphone with advanced camera capabilities and a large AMOLED display.",
@@ -19,7 +19,7 @@
   {
     "product_id": "SP002",
     "product_title": "Apple iPhone 15 Pro",
-    "product_image": "https://example.com/images/iphone_15_pro.jpg",
+    "product_image": "https://executivemachines.com/wp-content/uploads/2023/10/I-Phone-15-Pro-Hero.jpg",
     "category": "Smartphones",
     "price": 1099.99,
     "description": "Apple's latest flagship with ProMotion technology and a powerful A16 Bionic chip.",
@@ -36,7 +36,7 @@
   {
     "product_id": "SP003",
     "product_title": "Google Pixel 8 Pro",
-    "product_image": "https://example.com/images/pixel_8_pro.jpg",
+    "product_image": "https://mobilebuzzbd.com/wp-content/uploads/2023/12/Pixel-8-Pro.jpg",
     "category": "Smartphones",
     "price": 899.99,
     "description": "Flagship Pixel phone with Tensor G3 chip and AI-driven camera features.",
@@ -53,7 +53,7 @@
   {
     "product_id": "SP004",
     "product_title": "OnePlus 11",
-    "product_image": "https://example.com/images/oneplus_11.jpg",
+    "product_image": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202212/untitled_design_38-sixteen_nine.jpg?size=948:533",
     "category": "Smartphones",
     "price": 749.99,
     "description": "High-speed, high-performance smartphone with 120Hz display and fast charging.",
@@ -70,7 +70,7 @@
   {
     "product_id": "SP005",
     "product_title": "Sony Xperia 1 IV",
-    "product_image": "https://example.com/images/xperia_1_iv.jpg",
+    "product_image": "https://sony.scene7.com/is/image/sonyglobalsolutions/00_02_Large_static_M?$largeImageMobile$&fmt=png-alpha",
     "category": "Smartphones",
     "price": 999.99,
     "description": "Xperia with a 4K OLED display, great for multimedia and gaming.",
@@ -87,7 +87,7 @@
   {
     "product_id": "SP006",
     "product_title": "Xiaomi Mi 12 Ultra",
-    "product_image": "https://example.com/images/mi_12_ultra.jpg",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Black-9068.jpg",
     "category": "Smartphones",
     "price": 699.99,
     "description": "Affordable high-performance phone with top specs and advanced cameras.",
@@ -104,7 +104,7 @@
   {
     "product_id": "LP001",
     "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/images/dell_xps_13.jpg",
+    "product_image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/9345/media-gallery/touch/gray/notebook-xps-13-9345-t-gray-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3509&hei=2082&qlt=100,1&resMode=sharp2&size=3509,2082&chrss=full&imwidth=5000",
     "category": "Laptops",
     "price": 1199.99,
     "description": "Compact and powerful laptop with stunning 4K display.",
@@ -120,8 +120,8 @@
   },
   {
     "product_id": "LP002",
-    "product_title": "MacBook Air M2",
-    "product_image": "https://example.com/images/macbook_air_m2.jpg",
+    "product_title": "MacBook Air M3",
+    "product_image": "https://www.custommacbd.com/cdn/shop/files/macbookm3air.jpg?v=1711705803",
     "category": "Laptops",
     "price": 999.99,
     "description": "Apple's sleek, powerful laptop with the M2 chip.",
@@ -138,7 +138,7 @@
   {
     "product_id": "SW001",
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://example.com/images/apple_watch_series_8.jpg",
+    "product_image": "https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-SE-8up-hero-220907_big.jpg.large.jpg",
     "category": "Smartwatches",
     "price": 429.99,
     "description": "Advanced smartwatch with health and fitness tracking features.",
@@ -155,7 +155,7 @@
   {
     "product_id": "SW002",
     "product_title": "Samsung Galaxy Watch 5",
-    "product_image": "https://example.com/images/galaxy_watch_5.jpg",
+    "product_image": "https://diamu.com.bd/wp-content/uploads/2022/09/Samsung-Galaxy-Watch-5.jpg",
     "category": "Smartwatches",
     "price": 299.99,
     "description": "Stylish smartwatch with powerful health and fitness tracking capabilities.",
@@ -172,7 +172,7 @@
   {
     "product_id": "TV001",
     "product_title": "Samsung QN90A Neo QLED",
-    "product_image": "https://example.com/images/qn90a_qled.jpg",
+    "product_image": "https://p.turbosquid.com/ts-thumb/cY/LnzWhd/nI/samsung_qn90a_01/jpg/1643227605/1920x1080/fit_q87/6b229d2f87b0e1f4a92cd313c505e01b350c6658/samsung_qn90a_01.jpg",
     "category": "Televisions",
     "price": 1499.99,
     "description": "4K QLED TV with stunning colors and deep blacks, ideal for any room.",
@@ -189,7 +189,7 @@
   {
     "product_id": "TV002",
     "product_title": "LG OLED C1 Series",
-    "product_image": "https://example.com/images/lg_oled_c1.jpg",
+    "product_image": "https://miro.medium.com/v2/resize:fit:2000/1*N2b5QsXwbK_gP70RG6I-jw.jpeg",
     "category": "Televisions",
     "price": 1299.99,
     "description": "Stunning OLED display with deep blacks and ultra-clear colors.",
@@ -206,7 +206,7 @@
   {
     "product_id": "TV003",
     "product_title": "Sony Bravia XR A90J",
-    "product_image": "https://example.com/images/sony_bravia_xr_a90j.jpg",
+    "product_image": "https://i.ytimg.com/vi/xj97eumWxSw/sddefault.jpg",
     "category": "Televisions",
     "price": 1899.99,
     "description": "Top-tier OLED TV with XR processor for stunning visuals.",
@@ -223,7 +223,7 @@
   {
     "product_id": "LP003",
     "product_title": "HP Spectre x360",
-    "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+    "product_image": "https://techstore.co.in/cdn/shop/articles/Hp-Spectre-07.jpg?v=1487510918",
     "category": "Laptops",
     "price": 1399.99,
     "description": "2-in-1 laptop with excellent battery life and premium design.",
@@ -240,7 +240,7 @@
   {
     "product_id": "SW003",
     "product_title": "Fitbit Versa 4",
-    "product_image": "https://example.com/images/fitbit_versa_4.jpg",
+    "product_image": "https://hnau.imgix.net/media/catalog/product/f/b/fb523-fitbit-versa-4-hero.jpg",
     "category": "Smartwatches",
     "price": 229.99,
     "description": "Fitness-oriented smartwatch with long battery life and advanced tracking.",
