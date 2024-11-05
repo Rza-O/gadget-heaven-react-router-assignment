@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from 'react-icons/fa';
 
-const Header = () => {
+const Navbar = () => {
     const links = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link>Statistics</Link></li>
         <li><Link>Dashboard</Link></li>
     </>
     return (
-        <div className='bg-primary text-white'>
+        <div className='text-black'>
             <div className="navbar px-24">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -46,13 +46,9 @@ const Header = () => {
                     <a className="btn rounded-full"><FaRegHeart /></a>
                 </div>
             </div>
-                <div className='text-center w-11/12 mx-auto space-y-4 pb-72 mt-12'>
-                    <h1 className='font-bold text-[56px]'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
-                    <p className=''>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</p>
-                    <button className='btn rounded-3xl py-4 px-7'>Shop Now</button>
-                </div>
+                
         </div>
     );
 };
 
-export default Header;
+export default Navbar;
