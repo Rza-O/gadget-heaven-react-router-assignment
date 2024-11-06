@@ -17,123 +17,21 @@
     "rating": 4.8
   },
   {
-    "product_id": "SP002",
-    "product_title": "Apple iPhone 15 Pro",
-    "product_image": "https://executivemachines.com/wp-content/uploads/2023/10/I-Phone-15-Pro-Hero.jpg",
-    "category": "Smartphones",
-    "price": 1099.99,
-    "description": "Apple's latest flagship with ProMotion technology and a powerful A16 Bionic chip.",
+    "product_id": "TV001",
+    "product_title": "Samsung QN90A Neo QLED",
+    "product_image": "https://p.turbosquid.com/ts-thumb/cY/LnzWhd/nI/samsung_qn90a_01/jpg/1643227605/1920x1080/fit_q87/6b229d2f87b0e1f4a92cd313c505e01b350c6658/samsung_qn90a_01.jpg",
+    "category": "Televisions",
+    "price": 1499.99,
+    "description": "4K QLED TV with stunning colors and deep blacks, ideal for any room.",
     "specification": [
-      "Screen: 6.1-inch Super Retina XDR",
-      "Processor: A16 Bionic",
-      "RAM: 6GB",
-      "Storage: 256GB",
-      "Camera: 48MP Dual Camera"
-    ],
-    "availability": true,
-    "rating": 4.9
-  },
-  {
-    "product_id": "SP003",
-    "product_title": "Google Pixel 8 Pro",
-    "product_image": "https://mobilebuzzbd.com/wp-content/uploads/2023/12/Pixel-8-Pro.jpg",
-    "category": "Smartphones",
-    "price": 899.99,
-    "description": "Flagship Pixel phone with Tensor G3 chip and AI-driven camera features.",
-    "specification": [
-      "Screen: 6.7-inch OLED",
-      "Processor: Google Tensor G3",
-      "RAM: 12GB",
-      "Storage: 128GB",
-      "Camera: 50MP + 48MP Ultra-wide"
-    ],
-    "availability": false,
-    "rating": 4.6
-  },
-  {
-    "product_id": "SP004",
-    "product_title": "OnePlus 11",
-    "product_image": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202212/untitled_design_38-sixteen_nine.jpg?size=948:533",
-    "category": "Smartphones",
-    "price": 749.99,
-    "description": "High-speed, high-performance smartphone with 120Hz display and fast charging.",
-    "specification": [
-      "Screen: 6.7-inch Fluid AMOLED",
-      "Processor: Snapdragon 8 Gen 2",
-      "RAM: 8GB",
-      "Storage: 256GB",
-      "Camera: 50MP Triple Camera"
-    ],
-    "availability": true,
-    "rating": 4.7
-  },
-  {
-    "product_id": "SP005",
-    "product_title": "Sony Xperia 1 IV",
-    "product_image": "https://sony.scene7.com/is/image/sonyglobalsolutions/00_02_Large_static_M?$largeImageMobile$&fmt=png-alpha",
-    "category": "Smartphones",
-    "price": 999.99,
-    "description": "Xperia with a 4K OLED display, great for multimedia and gaming.",
-    "specification": [
-      "Screen: 6.5-inch 4K HDR OLED",
-      "Processor: Snapdragon 8 Gen 1",
-      "RAM: 12GB",
-      "Storage: 256GB",
-      "Camera: 12MP Triple Lens"
-    ],
-    "availability": false,
-    "rating": 4.5
-  },
-  {
-    "product_id": "SP006",
-    "product_title": "Xiaomi Mi 12 Ultra",
-    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Black-9068.jpg",
-    "category": "Smartphones",
-    "price": 699.99,
-    "description": "Affordable high-performance phone with top specs and advanced cameras.",
-    "specification": [
-      "Screen: 6.8-inch AMOLED",
-      "Processor: Snapdragon 8+ Gen 1",
-      "RAM: 12GB",
-      "Storage: 512GB",
-      "Camera: 108MP Quad Camera"
-    ],
-    "availability": true,
-    "rating": 4.4
-  },
-  {
-    "product_id": "LP001",
-    "product_title": "Dell XPS 13",
-    "product_image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/9345/media-gallery/touch/gray/notebook-xps-13-9345-t-gray-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3509&hei=2082&qlt=100,1&resMode=sharp2&size=3509,2082&chrss=full&imwidth=5000",
-    "category": "Laptops",
-    "price": 1199.99,
-    "description": "Compact and powerful laptop with stunning 4K display.",
-    "specification": [
-      "Screen: 13.4-inch 4K",
-      "Processor: Intel i7 11th Gen",
-      "RAM: 16GB",
-      "Storage: 512GB SSD",
-      "Battery: Up to 14 hours"
+      "Screen Size: 55-inch",
+      "Resolution: 4K",
+      "HDR: HDR10+",
+      "Smart TV: Tizen OS",
+      "Ports: 4 HDMI"
     ],
     "availability": true,
     "rating": 4.8
-  },
-  {
-    "product_id": "LP002",
-    "product_title": "MacBook Air M3",
-    "product_image": "https://www.custommacbd.com/cdn/shop/files/macbookm3air.jpg?v=1711705803",
-    "category": "Laptops",
-    "price": 999.99,
-    "description": "Apple's sleek, powerful laptop with the M2 chip.",
-    "specification": [
-      "Screen: 13.3-inch Retina",
-      "Processor: Apple M2",
-      "RAM: 8GB",
-      "Storage: 256GB SSD",
-      "Battery: Up to 18 hours"
-    ],
-    "availability": false,
-    "rating": 4.9
   },
   {
     "product_id": "SW001",
@@ -152,74 +50,7 @@
     "availability": true,
     "rating": 4.7
   },
-  {
-    "product_id": "SW002",
-    "product_title": "Samsung Galaxy Watch 5",
-    "product_image": "https://diamu.com.bd/wp-content/uploads/2022/09/Samsung-Galaxy-Watch-5.jpg",
-    "category": "Smartwatches",
-    "price": 299.99,
-    "description": "Stylish smartwatch with powerful health and fitness tracking capabilities.",
-    "specification": [
-      "Display: Super AMOLED",
-      "Processor: Exynos W920",
-      "Battery: Up to 40 hours",
-      "Water Resistance: 50m",
-      "Features: Blood Oxygen, ECG, Sleep Tracking"
-    ],
-    "availability": true,
-    "rating": 4.6
-  },
-  {
-    "product_id": "TV001",
-    "product_title": "Samsung QN90A Neo QLED",
-    "product_image": "https://p.turbosquid.com/ts-thumb/cY/LnzWhd/nI/samsung_qn90a_01/jpg/1643227605/1920x1080/fit_q87/6b229d2f87b0e1f4a92cd313c505e01b350c6658/samsung_qn90a_01.jpg",
-    "category": "Televisions",
-    "price": 1499.99,
-    "description": "4K QLED TV with stunning colors and deep blacks, ideal for any room.",
-    "specification": [
-      "Screen Size: 55-inch",
-      "Resolution: 4K",
-      "HDR: HDR10+",
-      "Smart TV: Tizen OS",
-      "Ports: 4 HDMI"
-    ],
-    "availability": true,
-    "rating": 4.8
-  },
-  {
-    "product_id": "TV002",
-    "product_title": "LG OLED C1 Series",
-    "product_image": "https://miro.medium.com/v2/resize:fit:2000/1*N2b5QsXwbK_gP70RG6I-jw.jpeg",
-    "category": "Televisions",
-    "price": 1299.99,
-    "description": "Stunning OLED display with deep blacks and ultra-clear colors.",
-    "specification": [
-      "Screen Size: 65-inch",
-      "Resolution: 4K",
-      "HDR: Dolby Vision",
-      "Smart TV: webOS",
-      "Ports: 4 HDMI"
-    ],
-    "availability": false,
-    "rating": 4.9
-  },
-  {
-    "product_id": "TV003",
-    "product_title": "Sony Bravia XR A90J",
-    "product_image": "https://i.ytimg.com/vi/xj97eumWxSw/sddefault.jpg",
-    "category": "Televisions",
-    "price": 1899.99,
-    "description": "Top-tier OLED TV with XR processor for stunning visuals.",
-    "specification": [
-      "Screen Size: 55-inch",
-      "Resolution: 4K",
-      "HDR: Dolby Vision",
-      "Smart TV: Android TV",
-      "Ports: 4 HDMI"
-    ],
-    "availability": true,
-    "rating": 4.9
-  },
+
   {
     "product_id": "LP003",
     "product_title": "HP Spectre x360",
@@ -252,5 +83,177 @@
     ],
     "availability": true,
     "rating": 4.5
+  },
+  {
+    "product_id": "SP004",
+    "product_title": "OnePlus 11",
+    "product_image": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202212/untitled_design_38-sixteen_nine.jpg?size=948:533",
+    "category": "Smartphones",
+    "price": 749.99,
+    "description": "High-speed, high-performance smartphone with 120Hz display and fast charging.",
+    "specification": [
+      "Screen: 6.7-inch Fluid AMOLED",
+      "Processor: Snapdragon 8 Gen 2",
+      "RAM: 8GB",
+      "Storage: 256GB",
+      "Camera: 50MP Triple Camera"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "TV002",
+    "product_title": "LG OLED C1 Series",
+    "product_image": "https://miro.medium.com/v2/resize:fit:2000/1*N2b5QsXwbK_gP70RG6I-jw.jpeg",
+    "category": "Televisions",
+    "price": 1299.99,
+    "description": "Stunning OLED display with deep blacks and ultra-clear colors.",
+    "specification": [
+      "Screen Size: 65-inch",
+      "Resolution: 4K",
+      "HDR: Dolby Vision",
+      "Smart TV: webOS",
+      "Ports: 4 HDMI"
+    ],
+    "availability": false,
+    "rating": 4.9
+  },
+  {
+    "product_id": "SP002",
+    "product_title": "Apple iPhone 15 Pro",
+    "product_image": "https://executivemachines.com/wp-content/uploads/2023/10/I-Phone-15-Pro-Hero.jpg",
+    "category": "Smartphones",
+    "price": 1099.99,
+    "description": "Apple's latest flagship with ProMotion technology and a powerful A16 Bionic chip.",
+    "specification": [
+      "Screen: 6.1-inch Super Retina XDR",
+      "Processor: A16 Bionic",
+      "RAM: 6GB",
+      "Storage: 256GB",
+      "Camera: 48MP Dual Camera"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "TV003",
+    "product_title": "Sony Bravia XR A90J",
+    "product_image": "https://i.ytimg.com/vi/xj97eumWxSw/sddefault.jpg",
+    "category": "Televisions",
+    "price": 1899.99,
+    "description": "Top-tier OLED TV with XR processor for stunning visuals.",
+    "specification": [
+      "Screen Size: 55-inch",
+      "Resolution: 4K",
+      "HDR: Dolby Vision",
+      "Smart TV: Android TV",
+      "Ports: 4 HDMI"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "SW002",
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://diamu.com.bd/wp-content/uploads/2022/09/Samsung-Galaxy-Watch-5.jpg",
+    "category": "Smartwatches",
+    "price": 299.99,
+    "description": "Stylish smartwatch with powerful health and fitness tracking capabilities.",
+    "specification": [
+      "Display: Super AMOLED",
+      "Processor: Exynos W920",
+      "Battery: Up to 40 hours",
+      "Water Resistance: 50m",
+      "Features: Blood Oxygen, ECG, Sleep Tracking"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "SP006",
+    "product_title": "Xiaomi Mi 12 Ultra",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Black-9068.jpg",
+    "category": "Smartphones",
+    "price": 699.99,
+    "description": "Affordable high-performance phone with top specs and advanced cameras.",
+    "specification": [
+      "Screen: 6.8-inch AMOLED",
+      "Processor: Snapdragon 8+ Gen 1",
+      "RAM: 12GB",
+      "Storage: 512GB",
+      "Camera: 108MP Quad Camera"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "LP001",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/9345/media-gallery/touch/gray/notebook-xps-13-9345-t-gray-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3509&hei=2082&qlt=100,1&resMode=sharp2&size=3509,2082&chrss=full&imwidth=5000",
+    "category": "Laptops",
+    "price": 1199.99,
+    "description": "Compact and powerful laptop with stunning 4K display.",
+    "specification": [
+      "Screen: 13.4-inch UHD+",
+      "Processor: Intel i7 11th Gen",
+      "RAM: 16GB",
+      "Storage: 512GB SSD",
+      "Battery: Up to 12 hours"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "LP002",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://i.ytimg.com/vi/OEFsVK7A7R0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCinHOclWyiDrocQGqEcHbtM7jcoQ",
+    "category": "Laptops",
+    "price": 1299.99,
+    "description": "Lightweight and powerful with the new Apple M2 chip for fast performance.",
+    "specification": [
+      "Screen: 13.6-inch Liquid Retina",
+      "Processor: Apple M2",
+      "RAM: 8GB",
+      "Storage: 256GB SSD",
+      "Battery: Up to 18 hours"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "SP005",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmws5KJ-g6PYWLLunMsvcyzH6Qg8-fWgroA&s",
+    "category": "Smartphones",
+    "price": 899.99,
+    "description": "The latest Google Pixel with AI-powered features and an impressive camera setup.",
+    "specification": [
+      "Screen: 6.7-inch LTPO OLED",
+      "Processor: Google Tensor G3",
+      "RAM: 12GB",
+      "Storage: 256GB",
+      "Camera: 50MP Triple Camera",
+      "Battery: 5000mAh with fast charging"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "SP006",
+    "product_title": "Sony Xperia 1 V",
+    "product_image": "https://media.wired.com/photos/64b987579a01d944fee3616e/master/pass/Sony-Xperia-1-V-Featured-Gear.png",
+    "category": "Smartphones",
+    "price": 1199.99,
+    "description": "Sony's flagship with pro-grade camera capabilities and a 4K display.",
+    "specification": [
+      "Screen: 6.5-inch 4K OLED",
+      "Processor: Snapdragon 8 Gen 2",
+      "RAM: 12GB",
+      "Storage: 512GB",
+      "Camera: 48MP Triple Camera",
+      "Battery: 5000mAh with fast charging"
+    ],
+    "availability": true,
+    "rating": 4.8
   }
 ]
