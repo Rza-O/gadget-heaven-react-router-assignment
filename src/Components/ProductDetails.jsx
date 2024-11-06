@@ -21,7 +21,7 @@ const ProductDetails = () => {
             <div className=''>
                 <Banner title='Product Details' subtitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'></Banner>
             </div>
-            <div className='bg-white flex gap-8  p-7 w-3/4 mx-auto rounded-3xl absolute top-40 left-60'>
+            <div className='bg-white border flex gap-8  p-7 w-3/4 mx-auto rounded-3xl absolute top-40 left-48'>
                 <img className='border rounded-2xl w-[425px] h-[500px] object-contain' src={product_image} alt="" />
                 <div className='space-y-4'>
                     <h1 className='text-3xl font-semibold'>{product_title}</h1>
