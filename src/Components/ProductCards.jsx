@@ -18,12 +18,14 @@ const ProductCards = () => {
 
     return (
         <>
-            <div className='grid grid-cols-3 gap-6'>
-                {
-                    products.map(product => <SingleCard key={product.product_title} product={product}></SingleCard>)
-                }
+            <div>
+                <div className='grid grid-cols-3 gap-6 '>
+                    {
+                        products.map(product => <SingleCard key={product.product_title} product={product}></SingleCard>)
+                    }
+                </div>
+                <button className='btn mt-5 rounded-xl bg-primary text-white hover:bg-primary'>View All</button>
             </div>
-            {/* <button>View All</button> */}
         </>
     );
 };
