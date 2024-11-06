@@ -17,11 +17,11 @@ const ProductDetails = () => {
     const { product_title, product_image, price, description, specification, availability, rating } = products;
     console.log(rating);
     return (
-        <div>
-            <div className='border-2 border-green-400'>
+        <div className='relative mb-96'>
+            <div className=''>
                 <Banner title='Product Details' subtitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'></Banner>
             </div>
-            <div className='flex gap-8 border p-7 w-3/4 mx-auto rounded-3xl'>
+            <div className='bg-white flex gap-8  p-7 w-3/4 mx-auto rounded-3xl absolute top-40 left-60'>
                 <img className='border rounded-2xl w-[425px] h-[500px] object-contain' src={product_image} alt="" />
                 <div className='space-y-4'>
                     <h1 className='text-3xl font-semibold'>{product_title}</h1>
