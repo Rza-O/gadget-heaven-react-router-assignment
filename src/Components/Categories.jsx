@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Categories = ({categories}) => {
     return (
-        <div>
+        <div className=''>
             <ul className="menu bg-base-200 rounded-box w-56">
                 <li>
                     <NavLink

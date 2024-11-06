@@ -17,7 +17,6 @@ const ProductCards = () => {
     }, [category, productsData]);
 
     return (
-        <>
             <div>
                 <div className='grid grid-cols-3 gap-6 '>
                     {
@@ -26,7 +25,7 @@ const ProductCards = () => {
                 </div>
                 <button className='btn mt-5 rounded-xl bg-primary text-white hover:bg-primary'>View All</button>
             </div>
-        </>
+        
     );
 };
 

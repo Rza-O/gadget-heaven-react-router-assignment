@@ -9,8 +9,8 @@ const BannerHome = () => {
                     <p className=''>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</p>
                     <button className='btn rounded-3xl py-4 px-7 text-primary'>Shop Now</button>
                 </div>
-                <div className=' absolute'>
-                    <img src="/banner.jpg" alt="" className='w-3/4 rounded-3xl h-full mx-auto border p-5 backdrop-blur-xl' />
+                <div className=' absolute w-full mx-auto h-[563px] left-0'>
+                    <img src="/banner.jpg" alt="" className='w-[962px] rounded-3xl h-full mx-auto border p-5 backdrop-blur-xl' />
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import React from 'react';
 const SingleCard = ({product}) => {
     const { product_image, product_title, price } = product;
     return (
-        <div className='border p-5 rounded-2xl hover:scale-110 transition'>
+        <div className='border p-5 rounded-2xl hover:scale-110 transition bg-white/5'>
             <img className='object-fit w-72 h-44 rounded-2xl mb-6' src={product_image} alt="" />
             <h3 className='mb-3 font-semibold text-xl'>{product_title}</h3>
             <p className='mb-4 text-black/60'>{price}</p>
