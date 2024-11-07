@@ -2,13 +2,13 @@ import React from 'react';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import { Outlet } from 'react-router-dom';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className='bg-[#f7f7f7]'>
             <Navbar></Navbar>
-            <Toaster></Toaster>
+            <Toaster />
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

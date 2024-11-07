@@ -7,7 +7,7 @@ const Footer = () => {
                 <h1 className='text-3xl font-bold'>Gadget Heaven</h1>
                 <p className='opacity-60'>Leading the way in cutting-edge technology and innovation.</p>
             </div>
-            <footer className="footer bg-white text-black-content p-10 border-t">
+            <footer className="footer bg-[#f7f7f7] text-black-content p-10 border-t">
                 <nav className='navbar-start'>
                     <h6 className="footer-title">Services</h6>
                     <a className="link link-hover">Branding</a>

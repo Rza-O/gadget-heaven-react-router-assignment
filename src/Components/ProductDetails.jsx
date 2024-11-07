@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
     const [products, setProducts] = useState({});
 
-    const { addToCart, addToWishlist } = useCartWishList();
+    const { addToCart, addToWishlist, isButtonDisabled } = useCartWishList();
 
     useEffect(() => {
         const singleProduct = productsData.find(p => p.product_id == id)

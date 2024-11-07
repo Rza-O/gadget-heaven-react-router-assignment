@@ -20,35 +20,57 @@ const useCartWishList = () => {
         localStorage.setItem('cart', JSON.stringify(cart))
     }, [cart]);
 
-    
 
     const addToCart = (product) => {
+        console.log(product);
         setCart((prevCart) => {
             const existingProduct = prevCart.find(item => item.product_id === product.product_id);
-            if (!existingProduct) {
-                const updatedCart = [...prevCart, product]
-                toast.success('Product Added to the cart!')
-                return updatedCart
-            }
-            else {
+            if (existingProduct) {
                 toast.error('Product already added to the cart')
                 return prevCart
+            }
+            else {
+                const updatedCart = [...prevCart, product]
+                toast.success(`${product.product_title} added to the cart`)
+                return updatedCart
             }
         })
     }
 
+
+
     const addToWishlist = (product) => {
-        setWishlist((exWishList) => {
-            const updatedWishList = [...exWishList, product]
-            toast.success(`${product.product_title} added to Wishlist`);
+        setWishlist((prevWishList)=> {
+            const existingProduct = prevWishList.find(item => item.product_id === product.product_id)
+            if(existingProduct){
+                toast.error(`${product.product_title} already in your Wishlist`)
+                return prevWishList;
+            }
+            const updatedWishList = [...prevWishList, product];
+            toast.success(`${product.product_title} added to your wishlist!`);
             return updatedWishList;
         })
     }
 
-    
+
+    const removeCartItem = (productId) => {
+        setCart((prevCart) => {
+            const updatedCart = prevCart.filter(item => item.product_id !== productId);
+            toast.success('Product removed from cart')
+            return updatedCart;
+        })
+    }
+
+    const removeItemFromWishList = (productId) => {
+        setWishlist((prevWishList) => {
+            const updatedWishList = prevWishList.filter(item => item.product_id !== productId);
+            toast.success('Product removed from the wishlist')
+            return updatedWishList
+        })
+    }
 
     return {
-        cart, wishlist, addToCart, addToWishlist, 
+        cart, wishlist, addToCart, removeCartItem, addToWishlist, removeItemFromWishList
     }
 };
 
