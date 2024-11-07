@@ -37,7 +37,9 @@ const useCartWishList = () => {
         })
     }
 
-
+    const clearCart = () => {
+        setCart([]);
+    }
 
     const addToWishlist = (product) => {
         setWishlist((prevWishList)=> {
@@ -70,7 +72,7 @@ const useCartWishList = () => {
     }
 
     return {
-        cart, wishlist, addToCart, removeCartItem, addToWishlist, removeItemFromWishList
+        cart, wishlist, addToCart, removeCartItem, addToWishlist, removeItemFromWishList, clearCart
     }
 };
 

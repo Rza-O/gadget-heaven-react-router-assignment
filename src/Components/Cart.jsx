@@ -6,9 +6,20 @@ import { useNavigate } from 'react-router-dom';
 import { ImSad } from "react-icons/im";
 
 const Cart = () => {
-    const { cart, removeCartItem } = useCartWishList()
+    const { cart, removeCartItem, clearCart} = useCartWishList()
     const totalCost = cart.reduce((sum, item) => sum + item.price, 0);
     const navigate = useNavigate();
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const handlePurchase = () => {
+        setModalOpen(true);
+    }
+
+    const purchase = () => {
+        clearCart();
+        setModalOpen(false);
+        navigate('/')
+    }
 
     const [isSortedDescending, setIsSortedDescending] = useState(false);
 
@@ -29,7 +40,7 @@ const Cart = () => {
                     <div onClick={sortToggle} className='flex items-center border border-primary text-primary p-3 rounded-3xl gap-1 cursor-pointer hover:bg-gray-200'>Sort by price {isSortedDescending?
                         <FaSortAmountDown /> : <FaSortAmountUp />
                         }</div>
-                    <div className='border px-8 rounded-3xl bg-primary text-white btn'>Purchase</div>
+                    <div onClick={handlePurchase} className='border px-8 rounded-3xl bg-primary text-white btn'>Purchase</div>
                 </div>
             </div>
             <div className='mt-6'>
@@ -42,6 +53,21 @@ const Cart = () => {
                         </div>
                         )}
             </div>
+
+            {
+                modalOpen && (<div className="modal modal-open ">
+                    <div className="modal-box flex flex-col items-center justify-center">
+                        <img className='mb-4' src="/Group.png" alt="" />
+                        <h2 className="text-2xl font-bold mb-4 border-b p-2 text-center">Payment Successful</h2>
+                        <hr className=''/>
+                        <p className="mb-6 text-black/50 text-center">Thank you for your purchase!</p>
+                        <p>Total: ${totalCost.toFixed(2)}</p>
+                        <div className="modal-action justify-center">
+                            <button onClick={purchase} className="btn bg-primary text-white">OK</button>
+                        </div>
+                    </div>
+                </div>)
+            }
         </div>
     );
 };
