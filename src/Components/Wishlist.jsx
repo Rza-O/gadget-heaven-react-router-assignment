@@ -22,7 +22,7 @@ const Wishlist = () => {
                         </WishCard>
                     )))
                         : (
-                        <div className="text-center mt-4">
+                        <div className="text-center mt-4 space-y-6">
                             <h1 className="text-4xl">Your wishlist is sooo empty!</h1>
                             <p className="text-lg text-black/40">Add item to your wishlist...</p>
                             <button onClick={() => navigate('/')} className="btn bg-primary text-white rounded-2xl">Shop Now</button>

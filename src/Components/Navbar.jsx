@@ -7,11 +7,11 @@ const Navbar = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const isHomePage = location.pathname === '/' || location.pathname.startsWith('/category');
-    const isStats = location.pathname === '/details';
+    const isStats = location.pathname === '/stats';
     const isDashboard = location.pathname === '/dashboard' || location.pathname.startsWith('/dashboard')
     const links = <>
         <li><Link className={`${isHomePage ? 'underline' : ''}`} to='/'>Home</Link></li>
-        <li><Link className={`${isStats ? 'text-primary' : ''}`} to='/details'>Statistics</Link></li>
+        <li><Link className={`${isStats ? 'text-primary' : ''}`} to='/stats'>Statistics</Link></li>
         <li><Link className={`${isDashboard ? 'text-primary' : ''}`} to='/dashboard'>Dashboard</Link></li>
     </>
     return (
@@ -39,7 +39,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Gadget Heaven </a>
+                    <Link to={() => navigate('/')} className="btn btn-ghost text-xl">Gadget Heaven </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
