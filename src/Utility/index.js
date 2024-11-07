@@ -71,8 +71,11 @@ const useCartWishList = () => {
         })
     }
 
+    const isInCart = (productId) => cart.find(item => item.product_id === productId);
+    const isInWishList = (productId) => wishlist.find(item.product_id === productId); 
+
     return {
-        cart, wishlist, addToCart, removeCartItem, addToWishlist, removeItemFromWishList, clearCart
+        cart, wishlist, addToCart, removeCartItem, addToWishlist, removeItemFromWishList, clearCart, isInCart, isInWishList
     }
 };
 

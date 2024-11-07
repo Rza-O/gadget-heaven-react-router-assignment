@@ -12,20 +12,23 @@ const ProductDetails = () => {
 
     const [products, setProducts] = useState({});
 
-    const { addToCart, addToWishlist, isButtonDisabled } = useCartWishList();
+    const { addToCart, addToWishlist, cart, wishlist } = useCartWishList();
 
+    
     useEffect(() => {
         const singleProduct = productsData.find(p => p.product_id == id)
         setProducts(singleProduct);
         // console.log(singleProduct);
     }, [productsData, id]);
-
+    
     useEffect(() => {
         window.scrollTo(0,0)
     }, []);
-
+    
     const { product_title, product_image, price, description, specification, availability, rating } = products;
     // console.log(products);
+    const isInWishlist = wishlist.find(item => item.product_id === products.product_id);
+    const isInCart = cart.find(item => item.product_id === products.product_id);
 
     return (
         <div className='relative mb-96'>
@@ -45,8 +48,8 @@ const ProductDetails = () => {
                     <p className='text-lg font-bold'>Rating: {rating}</p>
                     <Rating value={rating || 0} readOnly precision={0.1} size="large"/>
                     <div className='flex space-x-4'>
-                        <button onClick={() => addToCart(products)} className='btn hover:bg-primary bg-primary text-white'>Add To Cart <BsCart2 /></button>
-                        <button onClick={() => addToWishlist(products)} className='btn rounded-full hover:text-red-500'><FaRegHeart className='' /></button>
+                        <button onClick={() => addToCart(products)} className='btn hover:bg-primary bg-primary text-white'  disabled={isInCart}>Add To Cart <BsCart2 /></button>
+                        <button disabled={isInWishlist} onClick={() => addToWishlist(products)} className='btn rounded-full hover:text-red-500'><FaRegHeart className='' /></button>
                     </div>
                 </div>
             </div>

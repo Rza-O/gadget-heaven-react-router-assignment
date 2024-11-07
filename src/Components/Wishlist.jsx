@@ -18,7 +18,7 @@ const Wishlist = () => {
                 <h2 className="text-xl font-bold">Wishlist</h2>
                 <div className="mt-6">
                     {wishlist.length > 0 ? (wishlist.map((item) => (
-                        <WishCard key={item.product_id} item={item} removeItemFromWishList={removeItemFromWishList} handleAddToCart={handleAddToCart}>
+                        <WishCard key={item.product_id} wishlist={wishlist} item={item} removeItemFromWishList={removeItemFromWishList} handleAddToCart={handleAddToCart}>
                         </WishCard>
                     )))
                         : (
