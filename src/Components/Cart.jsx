@@ -40,7 +40,7 @@ const Cart = () => {
                     <div onClick={sortToggle} className='flex items-center border border-primary text-primary p-3 rounded-3xl gap-1 cursor-pointer hover:bg-gray-200'>Sort by price {isSortedDescending?
                         <FaSortAmountDown /> : <FaSortAmountUp />
                         }</div>
-                    <div onClick={handlePurchase} className='border px-8 rounded-3xl bg-primary text-white btn'>Purchase</div>
+                    <button disabled={!totalCost} onClick={handlePurchase} className='border px-8 rounded-3xl bg-primary text-white btn'>Purchase</button>
                 </div>
             </div>
             <div className='mt-6'>
