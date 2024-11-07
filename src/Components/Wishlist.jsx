@@ -1,22 +1,35 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useCartWishList from '../Utility';
+import WishCard from './WishCard';
 
 const Wishlist = () => {
-    const { wishlist, removeItemFromWishList } = useCartWishList();
-    console.log(wishlist);
+    const { wishlist, removeWishlistItem, addToCart } = useCartWishList();
+    const navigate = useNavigate();
+
+    const handleAddToCart = (item) => {
+        addToCart(item);
+        removeWishlistItem(item.product_id);
+    };
+
     return (
         <div>
-            <h2>wishlist item</h2>
-            <ul>
-                {
-                    wishlist.map(item => (
-                        <li key={item.product_id}>
-                            <p>{item.product_title}</p>
-                            <button onClick={() => removeItemFromWishList(item.product_id)}>remove</button>
-                        </li>
-                    ))
-                }
-            </ul>
+            <div className="w-10/12 mx-auto mt-4">
+                <h2 className="text-xl font-bold">Wishlist</h2>
+                <div className="mt-6">
+                    {wishlist.length > 0 ? (wishlist.map((item) => (
+                        <WishCard key={item.product_id} item={item} removeWishlistItem={removeWishlistItem} handleAddToCart={handleAddToCart}>
+                        </WishCard>
+                    )))
+                        : (
+                        <div className="text-center mt-4">
+                            <h1 className="text-4xl">Your wishlist is sooo empty!</h1>
+                            <p className="text-lg text-black/40">Add item to your wishlist...</p>
+                            <button onClick={() => navigate('/')} className="btn bg-primary text-white rounded-2xl">Shop Now</button>
+                        </div>
+                        )}
+                </div>
+            </div>
         </div>
     );
 };
