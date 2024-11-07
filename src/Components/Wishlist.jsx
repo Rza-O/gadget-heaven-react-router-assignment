@@ -11,6 +11,7 @@ const Wishlist = () => {
         addToCart(item);
         removeItemFromWishList(item.product_id);
     };
+    
 
     return (
         <div>

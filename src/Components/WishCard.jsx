@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
-const WishCard = ({ item, removeItemFromWishList, handleAddToCart, wishlist }) => {
+const WishCard = ({ item, removeItemFromWishList, handleAddToCart }) => {
     console.log(item.product_id);
     return (
         <div className='flex justify-between items-center p-4 border-b'>
