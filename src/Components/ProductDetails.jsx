@@ -8,14 +8,17 @@ import { FaRegHeart } from 'react-icons/fa';
 const ProductDetails = () => {
     const productsData = useLoaderData();
     const { id } = useParams();
+
     const [products, setProducts] = useState({});
     useEffect(() => {
         const singleProduct = productsData.find(p => p.product_id == id)
         setProducts(singleProduct);
         console.log(singleProduct);
     }, [productsData, id]);
+
     const { product_title, product_image, price, description, specification, availability, rating } = products;
     console.log(rating);
+    
     return (
         <div className='relative mb-96'>
             <div className=''>
@@ -43,7 +46,7 @@ const ProductDetails = () => {
                     />
                     <div className='flex space-x-4'>
                         <button className='btn hover:bg-primary bg-primary text-white'>Add To Cart <BsCart2 /></button>
-                        <button className='btn rounded-full hover:text-red-500'><FaRegHeart className=''/></button>
+                        <button className='btn rounded-full hover:text-red-500'><FaRegHeart className='' /></button>
                     </div>
                 </div>
             </div>

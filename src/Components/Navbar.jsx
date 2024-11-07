@@ -9,12 +9,12 @@ const Navbar = () => {
     const isStats = location.pathname === '/details';
     const isDashboard = location.pathname === '/dashboard'
     const links = <>
-        <li><Link className={`${isHomePage? 'underline' : ''}`} to='/'>Home</Link></li>
-        <li><Link className={`${isStats? 'text-primary' : ''}`} to='/details'>Statistics</Link></li>
+        <li><Link className={`${isHomePage ? 'underline' : ''}`} to='/'>Home</Link></li>
+        <li><Link className={`${isStats ? 'text-primary' : ''}`} to='/details'>Statistics</Link></li>
         <li><Link className={`${isDashboard ? 'text-primary' : ''}`} to='/dashboard'>Dashboard</Link></li>
     </>
     return (
-        <div className= {`${ isHomePage? 'bg-primary text-white mt-6 w-11/12 mx-auto rounded-t-3xl' : 'bg-white text-black'}`}>
+        <div className={`${isHomePage ? 'bg-primary text-white mt-6 w-11/12 mx-auto rounded-t-3xl' : 'bg-white text-black'}`}>
             <div className="navbar px-24">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -50,7 +50,7 @@ const Navbar = () => {
                     <a className="btn rounded-full"><FaRegHeart /></a>
                 </div>
             </div>
-                
+
         </div>
     );
 };
