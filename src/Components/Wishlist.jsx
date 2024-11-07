@@ -6,7 +6,7 @@ const Wishlist = () => {
     console.log(wishlist);
     return (
         <div>
-            <h2>Cart item</h2>
+            <h2>wishlist item</h2>
             <ul>
                 {
                     wishlist.map(item => (

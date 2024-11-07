@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BannerHome from '../Components/BannerHome';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Categories from '../Components/Categories';
 
 const Home = () => {
     const categories = useLoaderData();
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
     return (
         <div>
             <BannerHome></BannerHome>

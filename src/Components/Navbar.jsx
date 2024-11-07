@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, Navigate, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from 'react-icons/fa';
 
 const Navbar = () => {
     const location = useLocation();
+    const navigate = useNavigate();
     const isHomePage = location.pathname === '/' || location.pathname.startsWith('/category');
     const isStats = location.pathname === '/details';
     const isDashboard = location.pathname === '/dashboard' || location.pathname.startsWith('/dashboard')
@@ -46,8 +47,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-3">
-                    <a className="btn rounded-full"><BsCart2 /></a>
-                    <a className="btn rounded-full"><FaRegHeart /></a>
+                    <a onClick={()=> navigate('/dashboard')} className="btn rounded-full"><BsCart2 /></a>
+                    <a onClick={() => navigate('/dashboard/wishlist')} className="btn rounded-full"><FaRegHeart /></a>
                 </div>
             </div>
 
