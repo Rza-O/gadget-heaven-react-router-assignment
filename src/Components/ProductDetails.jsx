@@ -20,6 +20,10 @@ const ProductDetails = () => {
         // console.log(singleProduct);
     }, [productsData, id]);
 
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, []);
+
     const { product_title, product_image, price, description, specification, availability, rating } = products;
     // console.log(products);
 
