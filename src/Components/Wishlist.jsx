@@ -4,12 +4,12 @@ import useCartWishList from '../Utility';
 import WishCard from './WishCard';
 
 const Wishlist = () => {
-    const { wishlist, removeWishlistItem, addToCart } = useCartWishList();
+    const { wishlist, removeItemFromWishList, addToCart } = useCartWishList();
     const navigate = useNavigate();
 
     const handleAddToCart = (item) => {
         addToCart(item);
-        removeWishlistItem(item.product_id);
+        removeItemFromWishList(item.product_id);
     };
 
     return (
@@ -18,7 +18,7 @@ const Wishlist = () => {
                 <h2 className="text-xl font-bold">Wishlist</h2>
                 <div className="mt-6">
                     {wishlist.length > 0 ? (wishlist.map((item) => (
-                        <WishCard key={item.product_id} item={item} removeWishlistItem={removeWishlistItem} handleAddToCart={handleAddToCart}>
+                        <WishCard key={item.product_id} item={item} removeItemFromWishList={removeItemFromWishList} handleAddToCart={handleAddToCart}>
                         </WishCard>
                     )))
                         : (

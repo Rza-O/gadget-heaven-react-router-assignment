@@ -11,7 +11,7 @@ const CartCard = ({ item, removeCartItem }) => {
             <div className='w-[900px] p-4 ml-6 space-y-4'>
                 <h1 className='text-2xl font-semibold'>{item.product_title}</h1>
                 <p className='text-black/50'>{item.description}</p>
-                <p>${item.price}</p>
+                <p className='font-semibold'>${item.price}</p>
             </div>
             <IoIosCloseCircleOutline cursor='pointer' onClick={() => removeCartItem(item.product_id)} className='text-red-500 text-3xl'/>
         </div>
