@@ -7,7 +7,7 @@ const Navbar = () => {
     const location = useLocation();
     const isHomePage = location.pathname === '/' || location.pathname.startsWith('/category');
     const isStats = location.pathname === '/details';
-    const isDashboard = location.pathname === '/dashboard'
+    const isDashboard = location.pathname === '/dashboard' || location.pathname.startsWith('/dashboard')
     const links = <>
         <li><Link className={`${isHomePage ? 'underline' : ''}`} to='/'>Home</Link></li>
         <li><Link className={`${isStats ? 'text-primary' : ''}`} to='/details'>Statistics</Link></li>

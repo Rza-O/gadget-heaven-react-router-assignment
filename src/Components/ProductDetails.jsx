@@ -4,21 +4,25 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import { Rating } from '@mui/material';
 import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from 'react-icons/fa';
+import useCartWishList from '../Utility';
 
 const ProductDetails = () => {
     const productsData = useLoaderData();
     const { id } = useParams();
 
     const [products, setProducts] = useState({});
+
+    const { addToCart, addToWishlist } = useCartWishList();
+
     useEffect(() => {
         const singleProduct = productsData.find(p => p.product_id == id)
         setProducts(singleProduct);
-        console.log(singleProduct);
+        // console.log(singleProduct);
     }, [productsData, id]);
 
     const { product_title, product_image, price, description, specification, availability, rating } = products;
-    console.log(rating);
-    
+    // console.log(products);
+
     return (
         <div className='relative mb-96'>
             <div className=''>
@@ -33,20 +37,12 @@ const ProductDetails = () => {
                     <p className='text-lg text-black/60'>{description}</p>
                     <p className='text-lg font-bold'>Specification:</p>
                     {specification && specification.length > 0 ?
-                        specification.map((spec, idx) =>
-                            <p key={idx}>{idx + 1}. {spec}</p>
-                        )
-                        : ''}
+                        specification.map((spec, idx) => <p key={idx}>{idx + 1}. {spec}</p>): ''}
                     <p className='text-lg font-bold'>Rating: {rating}</p>
-                    <Rating
-                        value={rating || 0}
-                        readOnly
-                        precision={0.1}
-                        size="large"
-                    />
+                    <Rating value={rating || 0} readOnly precision={0.1} size="large"/>
                     <div className='flex space-x-4'>
-                        <button className='btn hover:bg-primary bg-primary text-white'>Add To Cart <BsCart2 /></button>
-                        <button className='btn rounded-full hover:text-red-500'><FaRegHeart className='' /></button>
+                        <button onClick={() => addToCart(products)} className='btn hover:bg-primary bg-primary text-white'>Add To Cart <BsCart2 /></button>
+                        <button onClick={() => addToWishlist(products)} className='btn rounded-full hover:text-red-500'><FaRegHeart className='' /></button>
                     </div>
                 </div>
             </div>
