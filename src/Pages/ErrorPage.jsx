@@ -1,9 +1,13 @@
 import { useRouteError } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import DocumentTitle from "../Utility/DocumentTitle";
 
 export default function ErrorPage() {
     const error = useRouteError();
+
+    DocumentTitle('404')
+
     console.error(error);
 
     return (

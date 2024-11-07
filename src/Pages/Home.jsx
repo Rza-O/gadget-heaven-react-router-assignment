@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import BannerHome from '../Components/BannerHome';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Categories from '../Components/Categories';
+import DocumentTitle from '../Utility/DocumentTitle';
 
 const Home = () => {
+    DocumentTitle('Gadgets Heaven')
     const categories = useLoaderData();
     useEffect(() => {
         window.scrollTo(0, 0)

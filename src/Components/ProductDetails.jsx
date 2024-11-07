@@ -5,8 +5,11 @@ import { Rating } from '@mui/material';
 import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from 'react-icons/fa';
 import useCartWishList from '../Utility';
+import DocumentTitle from '../Utility/DocumentTitle';
 
 const ProductDetails = () => {
+    DocumentTitle('Details')
+
     const productsData = useLoaderData();
     const { id } = useParams();
 
