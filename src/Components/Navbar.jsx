@@ -8,11 +8,13 @@ const Navbar = () => {
     const navigate = useNavigate();
     const isHomePage = location.pathname === '/' || location.pathname.startsWith('/category');
     const isStats = location.pathname === '/stats';
-    const isDashboard = location.pathname === '/dashboard' || location.pathname.startsWith('/dashboard')
+    const isDashboard = location.pathname === '/dashboard' || location.pathname.startsWith('/dashboard');
+    const isContact = location.pathname === '/contact'
     const links = <>
         <li><Link className={`${isHomePage ? 'underline' : ''}`} to='/'>Home</Link></li>
         <li><Link className={`${isStats ? 'text-primary' : ''}`} to='/stats'>Statistics</Link></li>
         <li><Link className={`${isDashboard ? 'text-primary' : ''}`} to='/dashboard'>Dashboard</Link></li>
+        <li><Link className={`${isContact ? 'text-primary' : ''}`} to='/contact'>Contact</Link></li>
     </>
     return (
         <div className={`${isHomePage ? 'bg-primary text-white mt-6 w-11/12 mx-auto rounded-t-3xl' : 'bg-white text-black'}`}>

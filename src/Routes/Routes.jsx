@@ -7,6 +7,7 @@ import ProductDetails from "../Components/ProductDetails";
 import Cart from "../Components/Cart";
 import Wishlist from "../Components/Wishlist";
 import ErrorPage from "../Pages/ErrorPage";
+import Contact from "../Pages/Contact";
 
 const routes = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ const routes = createBrowserRouter([
                 path: '/details/:id',
                 element: <ProductDetails></ProductDetails>,
                 loader: () => fetch('../fakeProducts.json')
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
             }
         ]
     }
